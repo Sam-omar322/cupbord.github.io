@@ -1,0 +1,252 @@
+@font-face {
+    font-family: cairo-regular;
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+@font-face {
+    font-family: cairo-semi;
+    src: url(../fonts/Cairo-SemiBold.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    font-family: cairo-regular, sans-serif, Arial, Helvetica, sans-serif;
+}
+
+#whatsapp-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #01B363;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
+
+#whatsapp-icon a i {
+    color: #ffffff;
+}
+
+/* feature section */
+
+.features {
+    background-color: #ffffff;
+    padding: 75px 0 0;
+}
+
+.features .feature-title h2 {
+    color: #555555;
+    font-size: 36px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.features .feature-title hr {
+    width: 145px;
+    height: 3px;
+    color: #FF7000;
+    margin: 0 auto;
+    opacity: 1;
+}
+
+.features .feature-media .d-flex {
+    padding: 70px 0;
+    border-bottom: 3px solid #eeeeee;
+}
+
+.features .feature-media .d-flex:last-child {
+    border-bottom: none;
+}
+
+.carousel-img-content {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-img {
+    width: 305px;
+}
+
+.features .feature-media .d-flex img {
+    width: 300px;
+}
+
+.features .feature-media .product-desc {
+    margin: 0 50px;
+}
+
+.features .feature-media .d-flex h4 {
+    color: #FF7000;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 7px 25px;
+    margin: 40px 0;
+    border-right: 2px solid #FF7000
+}
+
+.features .feature-media .d-flex p {
+    color: #555555;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.features .feature-media .d-flex:nth-child(even) {
+    direction: ltr;
+}
+.features .feature-media .d-flex:nth-child(even) h4 {
+    border-right: 0;
+    border-left: 2px solid #FF7000
+}
+
+.features .feature-media ul li {
+    font-size: 24px;
+    text-align: right;
+}
+
+.features .feature-media ul li::marker {
+    color: #FF7000;
+}
+
+/* price section */
+.prices {
+    background-color: #f7f7f7;
+    padding: 50px 0 100px
+}
+
+.prices .p-title h2 {
+    color: #555555;
+    font-size: 30px;
+}
+
+/* plan cards */
+.prices .plan-card {
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    padding: 25px 0 20px;
+    margin-top: 70px;
+}
+
+.prices .plan-card .plan-title {
+    color: #FF7000;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 35px;
+    display: block;
+}
+
+.prices .plan-card h5 {
+    color: #a9a9ab;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.prices .plan-card h5 sub {
+    font-size: 18px;
+}
+
+.prices .plan-card ul {
+    list-style: none;
+    color: #a9a9ab;
+    font-size: 15px;
+    padding: 0;
+}
+
+.prices .plan-card ul li {
+    margin-bottom: 20px;
+}
+
+.prices .plan-card a {
+    border: 1px solid #01B363;
+    border-radius: 0;
+    padding: 14px 45px !important;
+    color: #01B363;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all .4s ease-in-out;
+}
+
+.prices .plan-card a:focus {
+    box-shadow: none;
+}
+
+.prices .plan-card a:hover {
+    background-color: #01B363;
+    color: #ffffff
+}
+
+.prices .plan-card a i {
+    margin-left: 10px;
+}
+
+.prices .col-md-6:nth-child(3) .plan-card {
+    padding-top: 60px;
+    margin-top: 55px;
+}
+
+.prices .col-md-6:nth-child(3) .plan-card a {
+    background-color: #01B363;
+    color: #ffffff
+}
+
+/* contact section */
+.contact {
+    background-color: #131313;
+    padding: 60px 0 50px;
+}
+
+.contact h4 {
+    color: #758594;
+    font-size: 18px;
+    line-height: 48px;
+}
+
+.contact p {
+    color: #ffffff;
+}
+
+/* footer section */
+footer {
+    background-color: #1d1d1d;
+    padding: 22px 0;
+}
+
+footer .copyright {
+    color: #919191;
+    font-size: 15px;
+    text-align: left;
+    line-height: 2.5;
+}
+
+footer .copyright p {
+    margin: 0;
+    display: inline;
+}
+
+/* media responsive */
+@media (max-width: 1199px) {
+    .contact .row:nth-child(1) {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .features .feature-media .d-flex {
+        flex-flow: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .features .feature-media .d-flex h4 {
+        border: none !important
+    }
+    .contact h4 {
+        margin-top: 30px;
+    }
+}
